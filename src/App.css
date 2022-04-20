@@ -1,0 +1,451 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8ec2ff;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.home-button {
+  margin: 0.5% 1%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+header p {
+  margin-left: auto;
+  padding-right: 1em;
+}
+
+.device-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.device-type {
+  background-color: #fff;
+  border-radius: 15%;
+  padding: 2rem 0rem;
+  margin: 0 1rem;
+  width: 100%;
+  max-width: 960px;
+}
+
+.device-type:hover {
+  transform: translate(0, -3px);
+  transition: 0.1s linear;
+}
+
+.device-type:active {
+  background-color: #d3e7fd;
+}
+
+.device-type a {
+  text-decoration: none;
+  color: #282c34;
+}
+
+.device-img {
+  max-width: 100%;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5rem 10rem;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+ul {
+  width: 100%;
+  padding: 2rem 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #013a63;
+}
+
+li {
+  background-color: #a2d2ff;
+  width: 80%;
+  margin-bottom: 1.5rem;
+  padding: 10px 0;
+  border-radius: 10px;
+  list-style-type: none;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+.devices-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.devices-list:hover {
+  transform: translate(0, -3px);
+  transition: 0.1s linear;
+}
+
+.device-link {
+  flex: 1;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:visited {
+  color: black;
+}
+
+li p {
+  text-align: start;
+  margin-left: 5%;
+}
+
+.ac-controller {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.ac-display {
+  width: 50%;
+  padding: 3rem 1rem;
+}
+
+.remote-control {
+  background-color: #5380a0;
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+  border: 5px solid #013a63;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 13rem;
+}
+
+.volume-buttons,
+.channel-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.control-button {
+  background-color: white;
+  border: 2px solid #282c34;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  margin-top: 5px;
+}
+
+.controllers-section-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.channel-tuner {
+  width: 50%;
+  height: 50%;
+}
+
+.submit-channel {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: none;
+  margin-left: 5px;
+  background-color: rgb(74, 204, 139);
+}
+
+.hidden-label {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.add-button {
+  align-self: flex-end;
+  border-radius: 20px;
+  width: 4rem;
+  height: 2rem;
+}
+
+.popup-container {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: 15vh;
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.popup-form div {
+  margin: 2rem 0;
+}
+
+.popup-button {
+  margin-top: 2rem;
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  background-color: #5380a0;
+  color: white;
+  border-radius: 6px;
+}
+
+.close-popup {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: 14vh;
+  background: #dd4c4c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid rgb(100, 0, 0);
+  font-size: 20px;
+  color: white;
+}
+
+.power-container {
+  margin: 1rem 0;
+}
+
+.power-checkbox {
+  appearance: none;
+  position: absolute;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  background-color: #dd4c4c;
+}
+
+.power-checkbox:hover {
+  background-color: #b13f3f;  
+}
+
+.power-checkbox:active {
+  background-color: #dd4c4c;  
+}
+
+.power-checkbox:checked {
+  background-color: rgb(66, 153, 95);
+}
+
+.power-checkbox:checked:hover {
+  background-color: rgb(52, 119, 74);
+}
+
+.power-checkbox:checked:active {
+  background-color: rgb(66, 153, 95);
+}
+
+.list-bttn-container {
+  margin-right: 5%;
+}
+
+.confirm-bttn {
+  background-color: #447464;
+  margin-right: 5%;
+}
+
+.cancel-bttn {
+  background-color: #dd4c4c;
+}
+
+@media (max-width: 900px) {
+  .device-container {
+    flex-direction: column;
+  }
+  .device-type {
+    border-radius: 0%;
+    margin-bottom: 1rem;
+    padding: 50px 0px;
+  }
+  .device-type:first-child {
+    margin-top: 1rem;
+  }
+  .App-logo {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .list-container {
+    margin: 5rem 3rem;
+  }
+
+  .ac-controller {
+    flex-direction: column;
+  }
+
+  .ac-display {
+    width: 80%;
+    margin-top: 15%;
+  }
+
+  .remote-control {
+    height: 20rem;
+  }
+}
